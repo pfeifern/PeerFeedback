@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE surveyProject SYSTEM "doctype.survey.dtd">
+<surveyProject version="2.4" timestamp="2021-10-20 21:37:58" program="oFb" progversion="3.2.40 1312">
+<title>PeerFeedbackMuster</title>
+<description />
+<attributes.specific program="ofb">
+<attr id="language">ger</attr>
+<attr id="projectBackground">scientific</attr>
+</attributes.specific>
+<section>
+<title>Evaluation</title>
+<attributes.specific program="ofb">
+<attr id="id">EV</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+<question>
+<description>Willkommen zur Evaluation</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<headerText>Herzlich Willkommen zur Evaluation</headerText>
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<p style="text-align:center;"><b>Herzlich willkommen zur Evaluation<br /><br />„Feedback auf verbaler/paraverbaler/nonverbaler Ausdrucksebene“</b>
+<br /><br /></p>
+
+<p></p>
+
+<p></p>
+
+<p align="center">im Rahmen des [Lehrveranstaltungstitel] von [Name der leitenden Person] an der [Name der Hochschule].</p>
+
+<div style="text-align:center;"><br /></div>
+
+<p></p>
+
+<div style="text-align:center;"><i>Die Evaluation dient dazu, künftige Lehrveranstaltungen zu verbessern.</i></div>
+
+<div style="text-align:center;"><i><br /></i></div>
+
+<p style="text-align:center;"><i>Ihre Anonymität bleibt gewahrt.</i></p>
+
+<p style="text-align:center;" class="sceditor-nlf"><br style="color:rgb(0,0,0);font-family:arial, sans-serif;font-size:16px;font-style:normal;font-weight:400;letter-spacing:normal;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;" /></p>
+
+<p><br /></p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">31</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">center</attr>
+</attributes.specific>
+</question>
+<question>
+<description>FeedbackAllgemein</description>
+<class>select</class>
+<title>Was halten Sie davon, dass nach jedem Referat ein Feedback (verbal/paraverbal/nonverbal) gegeben wird?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">2</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV03</value>
+</effect>
+</filter>
+<filter>
+<condition type="any">
+<value id="vOpt">1</value>
+<value id="vOpt">2</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV02</value>
+</effect>
+</filter>
+<item>
+<text>Das Feedback hilft mir NICHT bei künftigen Referaten.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Das Feedback hilft mir eher NICHT bei künftigen Referaten.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Das Feedback hilft mir eher bei künftigen Referaten.</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Das Feedback hilft mir bei künftigen Referaten.</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>FeedbackAllgemein-1</description>
+<class>text</class>
+<title>Was würde Ihnen zum Verbessern künftiger Referate helfen?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">3</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>FeedbackAllgemein-2</description>
+<class>text</class>
+<title>Was war besonders hilfreich beim Feedback?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">4</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>FeedbackOnlinelehre</description>
+<class>select</class>
+<title>Ist das Feedback (verbal/paraverbal/nonverbal) – genauso wie es gegeben wurde – auch in der digitalen Lehre sinnvoll?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">5</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">1</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV05</value>
+</effect>
+</filter>
+<filter>
+<condition type="any">
+<value id="vOpt">2</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV06</value>
+</effect>
+</filter>
+<filter>
+<condition type="any">
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV07</value>
+</effect>
+</filter>
+<item>
+<text>NEIN, ich finde das Feedback per Zoom nicht hilfreich.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Eher NEIN, ich finde das Feedback per Zoom eher nicht hilfreich.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Eher JA, ich finde das Feedback auch hilfreich, wenn es per Zoom durchgeführt wird.</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA, ich finde das Feedback auch hilfreich, wenn es per Zoom durchgeführt wird.</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>FeedbackOnlinelehre-1</description>
+<class>text</class>
+<title>Warum ist das Feedback (verbal/paraverbal/nonverbal) in der digitalen Lehre NICHT sinnvoll?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">6</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>FeedbackOnlinelehre-2</description>
+<class>text</class>
+<title>Warum ist das Feedback (verbal/paraverbal/nonverbal) in der digitalen Lehre eher NICHT sinnvoll?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">7</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>FeedbackOnlinelehre-3</description>
+<class>text</class>
+<title>Welche(n) Aspekt(e) des Feedbacks (verbal/paraverbal/nonverbal) finden Sie hilfreich speziell für die digitale Lehre?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">8</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>AnpassungOnlinelehre</description>
+<class>select</class>
+<title>Sollte das Feedback (verbal/paraverbal/nonverbal) – genauso wie es gegeben wurde – für die digitale Lehre angepasst werden?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">9</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">2</value>
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV09</value>
+</effect>
+</filter>
+<item>
+<text>NEIN, ich finde das Feedback – so wie es gegeben wird – hilfreich und ich würde nichts daran ändern.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Eher NEIN, ich finde das Feedback – so wie es gegeben wird – hilfreich und ich würde kaum etwas daran ändern.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Eher JA, ich finde es hilfreich, wenn das Feedback an die digitale Lehre (per Zoom) angepasst wird.</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA, ich finde es hilfreich, wenn das Feedback an die digitale Lehre (per Zoom) angepasst wird.</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>AnpassungOnlinelehre-1</description>
+<class>text</class>
+<title>Wie sollte das Feedback (verbal, paraverbal, nonverbal) an die Lehre per Zoom angepasst werden?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">10</attr>
+<attr id="restrictions.answered">probe</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Motivation</description>
+<class>select</class>
+<title>Motiviert Sie die Aussicht auf den Erhalt des Feedbacks (verbal/paraverbal/nonverbal) in der Referatsvorbereitung?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">11</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Konzentration</description>
+<class>select</class>
+<title>Können Sie sich während der Lehrveranstaltung allgemein besser konzentrieren, wenn Sie wissen, dass Sie Feedback (verbal/paraverbal/nonverbal) geben sollen (im Vergleich dazu, wenn Sie kein Feedback geben sollen)?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">12</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">1</value>
+<value id="vOpt">2</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV12</value>
+</effect>
+</filter>
+<filter>
+<condition type="any">
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV39</value>
+</effect>
+</filter>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Konzentration-1</description>
+<class>text</class>
+<title>Inwiefern werden Sie in Ihrer Konzentration durch das Feedbackgeben gestört?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">12</attr>
+<attr id="pos">13</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Konzentration-2</description>
+<class>text</class>
+<title>Inwiefern werden Sie in Ihrer Konzentration durch das Feedbackgeben gestützt?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">39</attr>
+<attr id="pos">14</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>WichtigkeitVerbal</description>
+<class>select</class>
+<title>Wie wichtig ist das Feedback auf der verbalen Ausdrucksebene (Wortwahl, Satzbau, Partikel, ...) für Ihre künftigen Referate?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">13</attr>
+<attr id="pos">15</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>nicht wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher unwichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>sehr wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>WichtigkeitParaverbal</description>
+<class>select</class>
+<title>Wie wichtig ist das Feedback auf der paraverbalen Sprachebene (Stimme, Betonung, Pausen, ...) für Ihre künftigen Referate?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">14</attr>
+<attr id="pos">16</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>nicht wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher unwichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>sehr wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>WichtigkeitNonverbal</description>
+<class>select</class>
+<title>Wie wichtig ist das Feedback auf der nonverbalen Ausdrucksebene (Mimik, Gestik, Körperhaltung, ...) für Ihre künftigen Referate?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">15</attr>
+<attr id="pos">17</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>nicht wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher unwichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>sehr wichtig</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>AndereLVs</description>
+<class>select</class>
+<title>Sollte das Feedback (verbal/paraverbal/nonverbal) auch in anderen Lehrveranstaltungen gegeben werden?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">16</attr>
+<attr id="pos">18</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV17</value>
+</effect>
+</filter>
+<item>
+<text>NEIN, mir reicht es, wenn ich einmalig das verbal/paraverbal/nonverbal Feedback auf mein Referat erhalte.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Eher NEIN, mir reicht es, wenn ich einmalig das verbal/paraverbal/nonverbal Feedback auf mein Referat erhalte.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Eher JA, ich finde es hilfreich, wenn ich auch in anderen Lehrveranstaltungen verbal/paraverbal/nonverbal Feedbacks auf mein Referat erhalte.</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA, ich finde es hilfreich, wenn ich auch in anderen Lehrveranstaltungen verbal/paraverbal/nonverbal Feedbacks auf mein Referat erhalte.</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>AndereLVs-1</description>
+<class>checkbox</class>
+<title>Das Feedback (verbal/paraverbal/nonverbal) sollte auch in anderen Lehrveranstaltungen gegeben werden (Mehrfachnennungen möglich):</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">17</attr>
+<attr id="pos">19</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>vor dem Studium (Propädeutikum)</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>zu Beginn des Studiums (1. Semester)</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>während des Bakkalaureatsstudiums</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>während des Masterstudiums</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>während des Doktoratsstudiums</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>WieOftFeedback</description>
+<class>select</class>
+<title>Angenommen Sie halten während Ihres Studiums 10 Referate. Zu wie vielen davon hätten Sie gerne ein verbal/paraverbal/nonverbal Feedback?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">18</attr>
+<attr id="pos">20</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>0</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>1</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>2</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>3</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>4</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>5</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+<item>
+<text>6</text>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+</attributes.specific>
+</item>
+<item>
+<text>7</text>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">8</attr>
+</attributes.specific>
+</item>
+<item>
+<text>8</text>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">9</attr>
+</attributes.specific>
+</item>
+<item>
+<text>9</text>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">10</attr>
+</attributes.specific>
+</item>
+<item>
+<text>10</text>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">11</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>AufmerksamkeitInhalt</description>
+<class>select</class>
+<title>Haben Sie den Eindruck, dass Sie ausreichend Aufmerksamkeit auf den Inhalt des Referats richten können, wenn Sie nur eine der drei Ausdrucksebenen (verbal/paraverbal/nonverbal) beobachten?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">19</attr>
+<attr id="pos">21</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>VorbereitungProfit</description>
+<class>select</class>
+<title>Konnten Sie durch die Feedbacks (verbal/paraverbal/nonverbal), die andere Studierende erhalten haben, für die Vorbereitung Ihres eigenen Referates profitieren?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">20</attr>
+<attr id="pos">22</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>DurchführungProfit</description>
+<class>select</class>
+<title>Konnten Sie durch die Feedbacks (verbal/paraverbal/nonverbal), die andere Studierende erhalten haben, während der Durchführung Ihres eigenen Referates profitieren?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">21</attr>
+<attr id="pos">23</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Lernathmosphäre</description>
+<class>select</class>
+<title>Haben die Feedbacks (verbal/paraverbal/nonverbal) die Lernatmosphäre (Stimmung, Lernkultur bzw. Zusammenarbeit)  im Seminar beeinflusst?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">22</attr>
+<attr id="pos">24</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV23</value>
+</effect>
+</filter>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Lernathmosphäre-1</description>
+<class>select</class>
+<title>Wie haben die Feedbacks (verbal/paraverbal/nonverbal) die Lernatmosphäre (Stimmung, Lernkultur bzw. Zusammenarbeit) im Seminar beeinflusst?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">23</attr>
+<attr id="pos">25</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEGATIV</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEGATIV</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher POSITIV</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>POSITIV</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>VergleichbarerBogen</description>
+<class>select</class>
+<title>Haben Sie schon einmal einen vergleichbaren Fragebogen zu den Feedbacks (verbal/paraverbal/nonverbal) ausgefüllt?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">24</attr>
+<attr id="pos">26</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">2</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV25</value>
+</effect>
+</filter>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>VergleichbarerBogen-1</description>
+<class>text</class>
+<title>In welchem Semester haben Sie einen vergleichbaren Fragebogen zu den Feedbacks  (verbal/paraverbal/nonverbal) ausgefüllt? Falls Sie sich an den Lehrveranstaltungstitel erinnern, geben Sie diesen bitte so genau wie möglich wieder.</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">25</attr>
+<attr id="pos">27</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Anwesenheit</description>
+<class>select</class>
+<title>Bitte schätzen Sie in Prozent ein, wie oft Sie im Seminar anwesend waren:</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">37</attr>
+<attr id="pos">28</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>0%</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>10%</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>20%</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>30%</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>40%</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>50%</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+<item>
+<text>60%</text>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+</attributes.specific>
+</item>
+<item>
+<text>70%</text>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">8</attr>
+</attributes.specific>
+</item>
+<item>
+<text>80%</text>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">9</attr>
+</attributes.specific>
+</item>
+<item>
+<text>90%</text>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">10</attr>
+</attributes.specific>
+</item>
+<item>
+<text>100%</text>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">11</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Weiterempfehlung</description>
+<class>select</class>
+<title>Würden Sie die Lehrveranstaltung weiterempfehlen?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">26</attr>
+<attr id="pos">29</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">1</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV27</value>
+</effect>
+</filter>
+<filter>
+<condition type="any">
+<value id="vOpt">2</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV28</value>
+</effect>
+</filter>
+<filter>
+<condition type="any">
+<value id="vOpt">3</value>
+<value id="vOpt">4</value>
+</condition>
+<effect type="+qst">
+<value id="qIS">EV29</value>
+</effect>
+</filter>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Weiterempfehlung-1</description>
+<class>text</class>
+<title>Warum würden Sie die Lehrveranstaltung NICHT weiterempfehlen?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">27</attr>
+<attr id="pos">30</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Weiterempfehlung-2</description>
+<class>text</class>
+<title>Warum würden Sie die Lehrveranstaltung eher NICHT weiterempfehlen?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">28</attr>
+<attr id="pos">31</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Weiterempfehlung-3</description>
+<class>text</class>
+<title>Was hat Ihnen besonders gut gefallen bzw. was haben Sie als besonders positiv erlebt?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">29</attr>
+<attr id="pos">32</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Sonstiges</description>
+<class>text</class>
+<title>Fällt Ihnen sonst noch etwas ein, das Sie gerne zum Feedback (verbal/paraverbal/nonverbal) oder allgemein zu dieser Lehrveranstaltung sagen möchten?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">30</attr>
+<attr id="pos">33</attr>
+<attr id="restrictions.answered">probe</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Selbstwirksamkeit</description>
+<class>select</class>
+<title>Bestärkt Sie das Feedback in Ihrer Überzeugung, dass Sie ein erfolgreiches Referat halten können?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">44</attr>
+<attr id="pos">34</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eher JA</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+</section>
+<section>
+<title>Participant</title>
+<attributes.specific program="ofb">
+<attr id="id">PA</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+<question>
+<description>Alter</description>
+<class>text</class>
+<title>Wie alt sind Sie?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Geschlecht</description>
+<class>select</class>
+<title>Geschlecht</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>weiblich</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>männlich</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>divers</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>keine Angabe</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Studienrichtung</description>
+<class>text</class>
+<title>Welche Studienrichtung(en) studieren Sie (bitte möglichst genau angeben, mit Haupt- und Nebenfächern)?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Semesterzahl</description>
+<class>text</class>
+<title>Seit wie vielen Semestern studieren Sie (bitte geben Sie die Gesamtzahl Ihrer Hochschulsemester an, inklusive des aktuellen Semesters)?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Lehramt</description>
+<class>select</class>
+<title>Studieren Sie auf das Lehramt?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>NEIN</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JA</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+</question>
+</section>
+<surveyLayout version="2.4" program="oFb" progversion="3.2.40 1312">
+<name>mobile</name>
+<title>SoSci Smartphone</title>
+<template>
+<![CDATA[<!DOCTYPE html>
+<html>
+<head>
+%head%
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="target-densitydpi=high-dpi">
+<meta name="viewport" content="width=320">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+body { width: %width-10%; min-height: 600px; margin: 0px auto; padding: 0px 5px; background-color: #FFFFFF }
+table.question td.input { padding-top: 3px; padding-bottom: 3px }
+div.prompt { width: 258px }
+
+div.info div.symbol div.content,
+div.warning div.symbol div.content { min-height: inherit; padding-left: 16px }
+div.info div.symbol div.content:before,
+div.warning div.symbol div.content:before { display: none }
+</style>
+</head>
+
+<body>
+<div style="margin: 5px 0px">
+	<div style="width: 40%; float: right"><!-- %progress% --></div>
+	<div style="width: 50%">%logo%</div>
+	<hr style="clear: both; margin-bottom: 32px">
+	%form.open%
+	%questionnaire%
+	%form.close%
+	<hr style="clear: both; margin-top: 24px">
+	%imprint%
+</div>
+</body>
+</html>]]>
+</template>
+<defaultStatus>yes</defaultStatus>
+<copyright>
+<![CDATA[(c) 2012-2014 SoSci Survey
+Dieses Layout ist so angelegt, dass der Fragebogen automatisch die Breite des Smartphones füllt.
+Die große Schriftgröße (16px) und die geringe Breite (320px) sind notwendig, um automatisches Zoomen bei Texteingabefelder zu verhindern.]]>
+</copyright>
+<attributes.specific program="ofb">
+<attr id="body.font-size">16px</attr>
+<attr id="input.balloon.style">font-size: 11px; border: 1px solid %color.7%</attr>
+<attr id="input.scale.vertical-align">middle</attr>
+<attr id="button.style">min-width: 140px; height: 40px</attr>
+<attr id="feedback.style">border: 2px solid %color.2%; padding: 4px 8px; margin: 32px 0px</attr>
+<attr id="color.2">FF9900</attr>
+<attr id="color.3">EEEEEE</attr>
+<attr id="color.5">CCE5FF</attr>
+<attr id="color.6">88CCFF</attr>
+<attr id="color.7">CCCCCC</attr>
+<attr id="color.8">DDDDDD</attr>
+<attr id="width">320</attr>
+<attr id="spacing.item">10px</attr>
+<attr id="spacing.option">8px</attr>
+<attr id="input.style">medium</attr>
+<attr id="progress.foreground">color.6</attr>
+<attr id="selectable.backgroundInactive">color.3</attr>
+<attr id="selectable.borderInactive">color.3</attr>
+<attr id="selectable.backgroundSelected">color.5</attr>
+<attr id="selectable.backgroundAvailable">color.7</attr>
+<attr id="selectable.borderAvailable">color.8</attr>
+</attributes.specific>
+</surveyLayout>
+<layoutTexts>
+<layoutText id="default.imprint"><txt lng="ger">[Name der verantwortlichen Person], [Mailadresse], [Hochschule], [Institut]</txt></layoutText>
+<layoutText id="default.logo"><txt lng="ger">none</txt></layoutText>
+<layoutText id="default.question not answered"><txt lng="ger">Bitte beantworten Sie auch diese Frage.</txt></layoutText>
+</layoutTexts>
+<questionnaire>
+<title>MusterOnline</title>
+<attributes.specific program="ofb">
+<attr id="id">Online</attr>
+<attr id="content">
+<![CDATA[<?xml version="1.0"?>
+<questionnaire>
+
+<!-- Seite 1 -->
+<page intID="1">
+<question id="EV31" intID="2" />
+</page>
+
+
+<!-- Seite 2 -->
+<page intID="3">
+<question id="EV01" intID="5" />
+</page>
+
+
+<!-- Seite 3 -->
+<page intID="4">
+<question id="EV02" intID="6" />
+<question id="EV03" intID="7" />
+</page>
+
+
+<!-- Seite 4 -->
+<page intID="8">
+<question id="EV04" intID="9" />
+</page>
+
+
+<!-- Seite 5 -->
+<page intID="10">
+<question id="EV05" intID="11" />
+<question id="EV06" intID="12" />
+<question id="EV07" intID="13" />
+</page>
+
+
+<!-- Seite 6 -->
+<page intID="14">
+<question id="EV08" intID="16" />
+</page>
+
+
+<!-- Seite 7 -->
+<page intID="15">
+<question id="EV09" intID="17" />
+</page>
+
+
+<!-- Seite 8 -->
+<page intID="18">
+<question id="EV10" intID="20" />
+</page>
+
+
+<!-- Seite 9 -->
+<page intID="19">
+<question id="EV11" intID="21" />
+</page>
+
+
+<!-- Seite 10 -->
+<page intID="22">
+<question id="EV12" intID="24" />
+<question id="EV39" intID="25" />
+</page>
+
+
+<!-- Seite 11 -->
+<page intID="23">
+<question id="EV13" intID="26" />
+</page>
+
+
+<!-- Seite 12 -->
+<page intID="27">
+<question id="EV14" intID="29" />
+</page>
+
+
+<!-- Seite 13 -->
+<page intID="28">
+<question id="EV15" intID="30" />
+</page>
+
+
+<!-- Seite 14 -->
+<page intID="31">
+<question id="EV16" intID="33" />
+</page>
+
+
+<!-- Seite 15 -->
+<page intID="32">
+<question id="EV17" intID="34" />
+</page>
+
+
+<!-- Seite 16 -->
+<page intID="35">
+<question id="EV18" intID="37" />
+</page>
+
+
+<!-- Seite 17 -->
+<page intID="36">
+<question id="EV19" intID="38" />
+</page>
+
+
+<!-- Seite 18 -->
+<page intID="39">
+<question id="EV20" intID="41" />
+</page>
+
+
+<!-- Seite 19 -->
+<page intID="40">
+<question id="EV21" intID="42" />
+</page>
+
+
+<!-- Seite 20 -->
+<page intID="43">
+<question id="EV22" intID="45" />
+</page>
+
+
+<!-- Seite 21 -->
+<page intID="44">
+<question id="EV23" intID="46" />
+</page>
+
+
+<!-- Seite 22 -->
+<page intID="47">
+<question id="EV24" intID="48" />
+</page>
+
+
+<!-- Seite 23 -->
+<page intID="49">
+<question id="EV25" intID="50" />
+</page>
+
+
+<!-- Seite 24 -->
+<page intID="51">
+<question id="EV37" intID="52" />
+</page>
+
+
+<!-- Seite 25 -->
+<page intID="53">
+<question id="EV26" intID="54" />
+</page>
+
+
+<!-- Seite 26 -->
+<page intID="55">
+<question id="EV27" intID="56" />
+<question id="EV28" intID="57" />
+<question id="EV29" intID="58" />
+</page>
+
+
+<!-- Seite 27 -->
+<page intID="59">
+<question id="EV30" intID="60" />
+</page>
+
+
+<!-- Seite 28 -->
+<page intID="61">
+<question id="EV44" intID="62" />
+</page>
+
+
+<!-- Seite 29 -->
+<page intID="63">
+<question id="PA01" intID="64" />
+</page>
+
+
+<!-- Seite 30 -->
+<page intID="65">
+<question id="PA02" intID="67" />
+</page>
+
+
+<!-- Seite 31 -->
+<page intID="66">
+<question id="PA03" intID="68" />
+</page>
+
+
+<!-- Seite 32 -->
+<page intID="69">
+<question id="PA04" intID="71" />
+</page>
+
+
+<!-- Seite 33 -->
+<page intID="70">
+<question id="PA05" intID="72" />
+</page>
+
+
+</questionnaire>]]>
+</attr>
+<attr id="goodbye">
+<![CDATA[<h1>Vielen Dank für Ihre Teilnahme!</h1>]]>
+</attr>
+<attr id="panelForm">no</attr>
+<attr id="selection">0</attr>
+<attr id="probePreset">no</attr>
+</attributes.specific>
+</questionnaire>
+<questionnaire>
+<title>MusterPräsenz</title>
+<attributes.specific program="ofb">
+<attr id="id">Praesenz</attr>
+<attr id="content">
+<![CDATA[<?xml version="1.0"?>
+<questionnaire>
+
+<!-- Seite 1 -->
+<page intID="1">
+<question id="EV31" intID="2" />
+</page>
+
+
+<!-- Seite 2 -->
+<page intID="3">
+<question id="EV01" intID="5" />
+</page>
+
+
+<!-- Seite 3 -->
+<page intID="4">
+<question id="EV02" intID="6" />
+<question id="EV03" intID="7" />
+</page>
+
+
+<!-- Seite 4 -->
+<page intID="8">
+<question id="EV10" intID="9" />
+</page>
+
+
+<!-- Seite 5 -->
+<page intID="10">
+<question id="EV11" intID="11" />
+</page>
+
+
+<!-- Seite 6 -->
+<page intID="12">
+<question id="EV12" intID="14" />
+<question id="EV39" intID="15" />
+</page>
+
+
+<!-- Seite 7 -->
+<page intID="13">
+<question id="EV13" intID="16" />
+</page>
+
+
+<!-- Seite 8 -->
+<page intID="17">
+<question id="EV14" intID="19" />
+</page>
+
+
+<!-- Seite 9 -->
+<page intID="18">
+<question id="EV15" intID="20" />
+</page>
+
+
+<!-- Seite 10 -->
+<page intID="21">
+<question id="EV16" intID="23" />
+</page>
+
+
+<!-- Seite 11 -->
+<page intID="22">
+<question id="EV17" intID="24" />
+</page>
+
+
+<!-- Seite 12 -->
+<page intID="25">
+<question id="EV18" intID="27" />
+</page>
+
+
+<!-- Seite 13 -->
+<page intID="26">
+<question id="EV19" intID="28" />
+</page>
+
+
+<!-- Seite 14 -->
+<page intID="29">
+<question id="EV20" intID="31" />
+</page>
+
+
+<!-- Seite 15 -->
+<page intID="30">
+<question id="EV21" intID="32" />
+</page>
+
+
+<!-- Seite 16 -->
+<page intID="33">
+<question id="EV22" intID="35" />
+</page>
+
+
+<!-- Seite 17 -->
+<page intID="34">
+<question id="EV23" intID="36" />
+</page>
+
+
+<!-- Seite 18 -->
+<page intID="37">
+<question id="EV24" intID="39" />
+</page>
+
+
+<!-- Seite 19 -->
+<page intID="38">
+<question id="EV25" intID="40" />
+</page>
+
+
+<!-- Seite 20 -->
+<page intID="41">
+<question id="EV37" intID="42" />
+</page>
+
+
+<!-- Seite 21 -->
+<page intID="43">
+<question id="EV26" intID="45" />
+</page>
+
+
+<!-- Seite 22 -->
+<page intID="44">
+<question id="EV27" intID="46" />
+<question id="EV28" intID="47" />
+<question id="EV29" intID="48" />
+</page>
+
+
+<!-- Seite 23 -->
+<page intID="49">
+<question id="EV30" intID="51" />
+</page>
+
+
+<!-- Seite 24 -->
+<page intID="50">
+<question id="EV44" intID="52" />
+</page>
+
+
+<!-- Seite 25 -->
+<page intID="53">
+<question id="PA01" intID="55" />
+</page>
+
+
+<!-- Seite 26 -->
+<page intID="54">
+<question id="PA02" intID="56" />
+</page>
+
+
+<!-- Seite 27 -->
+<page intID="57">
+<question id="PA03" intID="59" />
+</page>
+
+
+<!-- Seite 28 -->
+<page intID="58">
+<question id="PA04" intID="60" />
+</page>
+
+
+<!-- Seite 29 -->
+<page intID="61">
+<question id="PA05" intID="62" />
+</page>
+
+
+</questionnaire>]]>
+</attr>
+<attr id="goodbye">
+<![CDATA[<h1>Vielen Dank für Ihre Teilnahme!</h1>]]>
+</attr>
+<attr id="panelForm">no</attr>
+<attr id="selection">1</attr>
+</attributes.specific>
+</questionnaire>
+</surveyProject>
